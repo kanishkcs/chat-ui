@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat Room</title>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,41 +20,34 @@
         <span>Galgotias</span>
         <img src="https://source.unsplash.com/random/30x30" alt="hello" />
       </div>
-      <div class="msg-box">
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am jha</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am jha</span>
-        <span class="snd-msg">I am kanishk</span>
-        <span class="rcv-msg">Hi kaise ho Guys</span>
-        <span class="snd-msg">I am jha</span>
+      <div class="msg-box" id ="isme">
        
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        <span class="snd-msg">ji</span>
+        <span class="rcv-msg">ji</span>
+        
       </div>
 
       <div class="footer">
+      
+            <input type="email" class="form__field" placeholder="message" id = "msg" />
+            <button type="button" onclick="save()" class="btn btn--primary btn--inside uppercase">Send</button>
+          </form>
+        </div>
         
-          <input type="text" placeholder="Message" class="footer-input" />
-       
-        
-            <button type="button" class="footer-btn">Send</button>
-       
+            
       </div>
     </div>
-    
+    <script src="main.js"></script>
   </body>
 </html>
